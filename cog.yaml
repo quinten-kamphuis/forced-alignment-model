@@ -1,0 +1,15 @@
+build:
+  gpu: true
+  cuda: "11.8"
+  python_version: "3.11"
+  system_packages:
+    - "ffmpeg"
+    - "libsndfile1"
+  python_packages:
+    - "torch==2.1.2"
+    - "torchaudio==2.1.2"
+    - "inflect==7.0.0"
+    - "numpy==1.26.3"
+    - "typing-extensions==4.9.0"
+
+predict: "predict.py:Predictor"
